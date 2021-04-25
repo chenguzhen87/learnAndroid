@@ -107,9 +107,52 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入要保存的电话号码"/>
     <EditText
         android:layout_width="fill_parent"
         android:hint="请输入"
         android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保存"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        tools:context="com.jay.example.getscreendemo.MainActivity" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:background="#FF7878"
+            android:gravity="center"
+            android:text="O(∩_∩)O哈哈~" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_gravity="right"
+            android:background="#FF7428"
+            android:gravity="center"
+            android:text="(*^__^*) 嘻嘻……" />
+
+    </LinearLayout>
 
 </LinearLayout>
