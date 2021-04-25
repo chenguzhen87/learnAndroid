@@ -1,15 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
 
-        android:layout_height="wrap_content">
-        <TextView
-            android:layout_width="wrap_content"
+    <!-- 这个是在容器中央的 -->
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_background"/>
+
+        <!-- 在中间图片的左边 -->
+    <ImageView
+    android:id="@+id/img2"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_toLeftOf="@id/img1"
+    android:layout_centerVertical="true"
+    android:src="@drawable/ic_launcher_background"/>
+
+        <!-- 在中间图片的右边 -->
+    <ImageView
+    android:id="@+id/img3"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_toRightOf="@id/img1"
+    android:layout_centerVertical="true"
+    android:src="@drawable/ic_launcher_background"/>
+
+        <!-- 在中间图片的上面-->
+    <ImageView
+    android:id="@+id/img4"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_above="@id/img1"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/ic_launcher_background"/>
+
+        <!-- 在中间图片的下面 -->
+    <ImageView
+    android:id="@+id/img5"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_below="@id/img1"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/ic_launcher_background"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_10"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingTop="@dimen/dimen_10">
+
+        <Button
+            android:id="@+id/btn1"
             android:layout_height="wrap_content"
-            android:text="chenzhen"></TextView>
+            android:layout_width="wrap_content"
+            android:text="Button"/>
+        <Button
+            android:paddingLeft="100dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Button"
+            android:layout_toRightOf="@id/btn1"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Button"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Button"
+            android:layout_toRightOf="@id/btn2"
+            android:layout_alignParentBottom="true"/>
+
     </RelativeLayout>
 
-</LinearLayout>
+</RelativeLayout>
+
