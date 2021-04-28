@@ -2,6 +2,7 @@ package com.example.learnandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -38,6 +39,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public  void onButtonClick(View view){
         Toast.makeText(this, "按钮1",Toast.LENGTH_LONG).show();
+    }
+
+    public void skip(View view){
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this,RelativeLayout.class);
+        startActivity(intent);
     }
 
 }
