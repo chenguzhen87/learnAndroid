@@ -5,154 +5,199 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="dddddddddddddddd"
-        android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
-        android:textColor="@color/colorWhite"
-        android:textAlignment="center"
-        ></TextView>
-    <Button android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/btn_bg"
-        android:textColor="@color/colorWhite"
-        android:layout_marginTop="20dp"
-        android:text="保存" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        >
-        <TextView
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/app_name"
-            />
-    </LinearLayout>
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="dddddddddddddddd"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"
+                ></TextView>
+            <Button android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="20dp"
+                android:text="保存" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:background="#ADFF2F"
-            android:layout_weight="1"/>
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="fill_parent"
-            android:background="#DA70D6"
-            android:layout_weight="2"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="60dp">
-        <TextView
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="one"
-            android:background="#98FB98"
-            />
-        <TextView
-            android:layout_weight="2"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="two"
-            android:background="#FFFF00"
-            />
-        <TextView
-            android:layout_weight="3"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:text="three"
-            android:background="#FF00FF"
-            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    />
+            </LinearLayout>
 
-    </LinearLayout>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginTop="10dp"
-        android:background="#000000" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:background="#ADFF2F"
+                    android:layout_weight="1"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:background="#DA70D6"
+                    android:layout_weight="2"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="one"
+                    android:background="#98FB98"
+                    />
+                <TextView
+                    android:layout_weight="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="two"
+                    android:background="#FFFF00"
+                    />
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:text="three"
+                    android:background="#FF00FF"
+                    />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:divider="@drawable/line"
-        android:orientation="vertical"
-        android:dividerPadding="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_height="wrap_content">
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="#000000" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="按钮1" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:divider="@drawable/line"
+                android:orientation="vertical"
+                android:dividerPadding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="按钮2" />
+                <Button
+                    android:onClick="onButtonClick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="按钮1" />
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="按钮3" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="按钮2" />
 
-    </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="按钮3" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="请输入要保存的电话号码"/>
-    <EditText
-        android:layout_width="fill_parent"
-        android:hint="请输入"
-        android:layout_height="wrap_content"/>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="right">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="保存"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="清空"/>
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请输入要保存的电话号码"/>
+            <EditText
+                android:layout_width="fill_parent"
+                android:hint="请输入"
+                android:layout_height="wrap_content"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="left"
-        tools:context="com.jay.example.getscreendemo.MainActivity" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="保存"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="清空"/>
+            </LinearLayout>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:background="#FF7878"
-            android:gravity="center"
-            android:text="O(∩_∩)O哈哈~" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                tools:context="com.jay.example.getscreendemo.MainActivity" >
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_gravity="right"
-            android:background="#FF7428"
-            android:gravity="center"
-            android:text="(*^__^*) 嘻嘻……" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:background="#FF7878"
+                    android:gravity="center"
+                    android:text="O(∩_∩)O哈哈~" />
 
-    </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="right"
+                    android:background="#FF7428"
+                    android:gravity="center"
+                    android:text="(*^__^*) 嘻嘻……" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请选择性别"
+                android:textSize="23dp"
+                />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/btnMan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:id="@+id/btnWoman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnpost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="提交"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </LinearLayout>
