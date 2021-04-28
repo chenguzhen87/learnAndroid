@@ -14,7 +14,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         Button button = findViewById(R.id.button);
+        Button button2 = findViewById(R.id.button2);
         button.setOnClickListener(this);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "按钮2",Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
     @Override
@@ -26,6 +33,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         "按钮被点击", Toast.LENGTH_SHORT).show();
                 //这里是弹出一个消息---"按钮被点击"
         }
+    }
+
+
+    public  void onButtonClick(View view){
+        Toast.makeText(this, "按钮1",Toast.LENGTH_LONG).show();
     }
 
 }
