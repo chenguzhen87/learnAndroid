@@ -95,6 +95,8 @@
                 android:orientation="vertical"
                 android:dividerPadding="10dp"
                 android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
                 android:layout_height="wrap_content">
 
                 <Button
@@ -114,6 +116,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="点击跳转" />
+
+                <Button
+                    android:id="@+id/dialTel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拨打电话" />
+
+                <Button
+                    android:id="@+id/dialTel2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="拨打电话2" />
+
+                <Button
+                    android:id="@+id/openBaidu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="打开百度" />
 
             </LinearLayout>
 

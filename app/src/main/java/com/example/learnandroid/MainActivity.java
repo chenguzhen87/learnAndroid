@@ -3,6 +3,7 @@ package com.example.learnandroid;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button button = findViewById(R.id.button);
         Button button2 = findViewById(R.id.button2);
+        Button dialTel = findViewById(R.id.dialTel);
+        Button dialTel2 = findViewById(R.id.dialTel2);
+        Button openBaidu = findViewById(R.id.openBaidu);
+
         button.setOnClickListener(this);
+        dialTel.setOnClickListener(this);
+        dialTel2.setOnClickListener(this);
+        openBaidu.setOnClickListener(this);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -33,7 +41,34 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(MainActivity.this,
                         "按钮被点击", Toast.LENGTH_SHORT).show();
                 //这里是弹出一个消息---"按钮被点击"
+            case R.id.dialTel:
+                dial();
+            case R.id.dialTel2:
+                dial2();
+            case R.id.openBaidu:
+                openBaidu();
         }
+    }
+
+
+    public void dial(){
+        // 调用拨打电话，给10010拨打电话
+        Uri uri = Uri.parse("tel:10010");
+        Intent intent = new Intent(Intent.ACTION_DIAL, uri);
+        startActivity(intent);
+    }
+
+    public void dial2(){
+        // 直接拨打电话，需要加上权限 <uses-permission  android:name="android.permission.CALL_PHONE"/>
+        Uri callUri = Uri.parse("tel:10010");
+        Intent intent = new Intent(Intent.ACTION_CALL, callUri);
+    }
+
+    public void openBaidu(){
+        // 打开百度主页
+        Uri uri = Uri.parse("https://www.baidu.com");
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 
 
