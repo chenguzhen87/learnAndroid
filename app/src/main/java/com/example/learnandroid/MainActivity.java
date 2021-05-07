@@ -20,11 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button dialTel = findViewById(R.id.dialTel);
         Button dialTel2 = findViewById(R.id.dialTel2);
         Button openBaidu = findViewById(R.id.openBaidu);
-
+        Button webview = findViewById(R.id.webview);
         button.setOnClickListener(this);
         dialTel.setOnClickListener(this);
         dialTel2.setOnClickListener(this);
         openBaidu.setOnClickListener(this);
+        webview.setOnClickListener(this);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,13 +41,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //里面写点击后想要实现的效果
                 Toast.makeText(MainActivity.this,
                         "按钮被点击", Toast.LENGTH_SHORT).show();
+                break;
                 //这里是弹出一个消息---"按钮被点击"
             case R.id.dialTel:
                 dial();
+                break;
             case R.id.dialTel2:
                 dial2();
+                break;
             case R.id.openBaidu:
                 openBaidu();
+                break;
+            case R.id.webview:
+                webview();
+                break;
         }
     }
 
@@ -68,6 +76,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // 打开百度主页
         Uri uri = Uri.parse("https://www.baidu.com");
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
+    }
+
+    public void webview(){
+        Intent intent = new Intent(this, WebViewActivity.class);
         startActivity(intent);
     }
 

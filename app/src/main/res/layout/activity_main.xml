@@ -101,39 +101,60 @@
 
                 <Button
                     android:onClick="onButtonClick"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="按钮1" />
 
                 <Button
                     android:id="@+id/button2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="按钮2" />
 
                 <Button
                     android:onClick="skip"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="点击跳转" />
 
                 <Button
                     android:id="@+id/dialTel"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="拨打电话" />
 
                 <Button
                     android:id="@+id/dialTel2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="拨打电话2" />
 
                 <Button
                     android:id="@+id/openBaidu"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="打开百度" />
+                <Button
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="打开webview" />
+                <Button
+                    android:id="@+id/RelativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="打开相对布局" />
+                <Button
+                    android:id="@+id/GridLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="打开网格布局" />
+                <Button
+                    android:id="@+id/TableLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="打开表格布局" />
+
 
             </LinearLayout>
 
